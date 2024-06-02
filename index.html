@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Kunal's Image Gallery</h1>
+    <div class="full-img" id="fullImgBox">
+        <img src="Image 1.webp" alt="Error in loading" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+      <div class="img-gallery">
+        <img src="Image 1.webp" alt="Error in loading" onclick="openFullImg(this.src)">
+        <img src="Image 2.webp" alt="Error in loading" onclick="openFullImg(this.src)">
+        <img src="Image 3.webp" alt="Error in loading" onclick="openFullImg(this.src)">
+        <img src="Image 4.webp" alt="Error in loading" onclick="openFullImg(this.src)">
+        <img src="Image 5.webp" alt="Error in loading" onclick="openFullImg(this.src)">
+        <img src="Image 6.webp" alt="Error in loading" onclick="openFullImg(this.src)">
+        <img src="Image 7.webp" alt="Error in loading" onclick="openFullImg(this.src)">
+        <img src="Image 8.webp" alt="Error in loading" onclick="openFullImg(this.src)">
+        <img src="Image 9.jpg"  alt="Error in loading"  onclick="openFullImg(this.src)">
+        <img src="Image 10.webp"alt="Error in loading" onclick="openFullImg(this.src)">
+      </div>
+      <script>
+
+            var fullImgBox = document.getElementById("fullImgBox");
+            var fullImg = document.getElementById("fullImg");
+
+
+            function openFullImg(pic){
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic;
+            }
+
+
+            function closeFullImg(){
+                fullImgBox.style.display ="none";
+            }
+
+      </script>
+</body>
+</html>
